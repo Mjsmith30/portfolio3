@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio 3</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="primary-overlay">
+      <div class="navbar-fixed">
+        <nav class="transparent">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#home" class="brand-logo">Marques</a>
+              <a href="#" data-activates="mobile-nav" class="button-collapse">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="#home">HOME</a>
+                </li>
+                <li>
+                  <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                  <a href="#resume">GITHUB</a>
+                </li>
+                <li>
+                  <a href="#contact">RESUME</a>
+                </li>
+
+              </ul>
+
+
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- sidenav -->
+      <ul class="side-nav" id="mobile-nav">
+        <h4 class="blue-grey darken-3 center">Marques</h4>
+        <li>
+          <a class="divider"></a>
+        </li>
+        <li>
+          <a href="#home">HOME</a>
+        </li>
+        <li>
+          <a href="#about">ABOUT</a>
+        </li>
+        <li>
+          <a href="#resume">RESUME</a>
+        </li>
+        <li>
+          <a href="#contact">CONTACT</a>
+        </li>
+      </ul>
+      <!-- Showcase -->
+      <div class="showcase container">
+        <div class="row">
+          <div class="col s12 main-text">
+            <h5>Marques Smith</h5>
+            <h1>Software Engineer</h1>
+            <p class="flow-text">I'm a software engineer currently living in Los Angeles, CA specializing in building
+              and
+              designing exceptional, high-quality websites and applications.</p>
+            <br>
+            <a href="#about" class="btn btn-large white black-text">Learn More</a>
+            <a href="#contact" class="white-text">
+              <i class="material-icons medium scroll-icon">arrow_drop_down_circle</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // init side-nav
+      $('.button-collapse').sideNav();
+
+      // scrollfire
+      const options = [
+        {
+          selector: '.main-text', offset: 0, callback: function (el) {
+            Materialize.fadeInImage($(el))
+          }
+        },
+        {
+          selector: '.navbar-fixed', offset: 1500, callback: function () {
+            $(nav).removeClass('transparent').addClass('blue-grey darken-3');
+          }
+        }
+      ];
+      Materialize.scrollFire(options);
+    });
+  </script>
+</body>
+
+</html>
