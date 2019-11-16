@@ -7,7 +7,7 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/main.css" />
-
+  <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio 3</title>
@@ -20,7 +20,7 @@
         <nav class="transparent">
           <div class="container">
             <div class="nav-wrapper">
-              <a href="#home" class="brand-logo">Marques</a>
+              <a href="#home" class="brand-logo">MJS</a>
               <a href="#" data-activates="mobile-nav" class="button-collapse">
                 <i class="material-icons">menu</i>
               </a>
@@ -37,10 +37,7 @@
                 <li>
                   <a href="#contact">RESUME</a>
                 </li>
-
               </ul>
-
-
               </a>
             </div>
           </div>
@@ -49,7 +46,7 @@
 
       <!-- sidenav -->
       <ul class="side-nav" id="mobile-nav">
-        <h4 class="blue-grey darken-3 center">Marques</h4>
+        <h4 class="blue-grey darken-3 center">MJS</h4>
         <li>
           <a class="divider"></a>
         </li>
@@ -85,31 +82,107 @@
       </div>
     </div>
   </header>
+<!-- section boxes -->
+  <section class="section-boxes center">
+    <div class="row">
+      <div class="col s12 m6 l3 orange white-text box">
+        <a class="btn-floating blue pulse">
+          <i class="material-icons large">domain</i></a>
+        <a href="https://thrifthunter.herokuapp.com/hunter">
+          <h4>Thrift Hunter</h4>
+        </a>
+        <p>ThriftxHunter is an app that allows you your friends and the entire world to post items up for
+          sale that you no longer need, instead of throwing old things away, this non-profit website will
+          host a space for you to sale them. You know what they say, one mans trash is another mans
+          treasure!</p>
+        <p>Languages: Javascript || Express || Node || HTML || CSS </p>
+      </div>
+      <div class="col s12 m6 l3 red white-text box">
+          <a class="btn-floating yellow pulse">
+        <i class="material-icons medium">domain</i></a><a href="http://pickupgames.herokuapp.com/">
+        <h4>PickUpGames</h4></a>
+        <p>Pugs, Aka Pick Up Games is an App that allows basketball players to connect across the city. It
+          allows you to find parks, the amount of players attending, and when they will be there.It puts
+          to bed the search for a descent pick up game of basketball
+          within your city.
+        </p>
+        <p>Languages: Mongodb || Express || React || Node || HTML || CSS </p>
+      </div>
+      <div class="col s12 m6 l3 blue white-text box">
+          <a class="btn-floating green pulse">
+            <i class="material-icons large">domain</i></a>
+          <a href="https://thrifthunter.herokuapp.com/hunter">
+            <h4>Guitar Collector</h4>
+          </a>
+          <p>ThriftxHunter is an app that allows you your friends and the entire world to post items up for
+            sale that you no longer need, instead of throwing old things away, this non-profit website will
+            host a space for you to sale them. You know what they say, one mans trash is another mans
+            treasure!</p>
+          <p>Languages: Javascript || Express || Node || HTML || CSS </p>
+        </div>
+      <div class="col s12 m6 l3 teal white-text box">
+          <a class="btn-floating purple pulse">
+            <i class="material-icons large">domain</i></a>
+          <a href="https://thrifthunter.herokuapp.com/hunter">
+            <h4>PlayYourRole</h4>
+          </a>
+          <p>ThriftxHunter is an app that allows you your friends and the entire world to post items up for
+            sale that you no longer need, instead of throwing old things away, this non-profit website will
+            host a space for you to sale them. You know what they say, one mans trash is another mans
+            treasure!</p>
+          <p>Languages: Javascript || Express || Node || HTML || CSS </p>
+        </div>
+    </div>
+<!-- section : About -->
+    <section class="section section-about grey lighten-3 center">
+      <div class="container">
+        <h2>About</h2>
+        <p class="flow-text">Lorem, ipsum dolor sit 
+          amet consectetur adipisicing elit. Nam, possimus.</p>
 
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // init side-nav
-      $('.button-collapse').sideNav();
+          <div class="row">
+            <div class="col s12 m6">
+              <img src="img/thumbnail (1).jpeg" alt="" class="responsive-img circle">
+            </div>
+            <div class="col s12 m5 offset-m1">
+                <br>
+                <ul class="collection with-header z-depth-4"><li class="collection-header">
+                  <h5>Services</h5>
+                </li>
+                <li class="collection-item">
+                  <i class="material-icons left">check</i>Business consultation
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
 
-      // scrollfire
-      const options = [
-        {
-          selector: '.main-text', offset: 0, callback: function (el) {
-            Materialize.fadeInImage($(el))
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // init side-nav
+        $('.button-collapse').sideNav();
+
+        // scrollfire
+        const options = [
+          {
+            selector: '.main-text', offset: 0, callback: function (el) {
+              Materialize.fadeInImage($(el))
+            }
+          },
+          {
+            selector: '.navbar-fixed', offset: 1500, callback: function () {
+              $('nav').removeClass('transparent');
+              $('nav').addClass('blue-grey darken-1');
+            }
           }
-        },
-        {
-          selector: '.navbar-fixed', offset: 1500, callback: function () {
-            $(nav).removeClass('transparent').addClass('blue-grey darken-3');
-          }
-        }
-      ];
-      Materialize.scrollFire(options);
-    });
-  </script>
+        ];
+        Materialize.scrollFire(options);
+      });
+    </script>
 </body>
 
 </html>

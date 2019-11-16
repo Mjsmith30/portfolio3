@@ -15,7 +15,7 @@
     background-position:center;
     height: 100vh;
     min-height: 600px;
-    color:white;
+    color:#64ffda;
     position:relative;
 }
 
@@ -30,3 +30,35 @@
     left: 47%;
     opacity: 0.5;
 }
+
+.box{
+    padding: 40px 10px !important;
+}
+.box h4{
+    padding-bottom: 30px;
+}
+
+
+.section-boxes .row {
+    margin-bottom: 0 !important;
+}
+
+@media(max-width: 600px){
+    .main-header {
+        height: 50vh;
+    }
+}
+
+
+.brand-logo{
+border-style:solid;
+margin-bottom: 15px !important;
+
+}
+h4{
+    color:white;
+   opacity: 0.5;
+   font-family: 'Calistoga', cursive;
+
+}
+
