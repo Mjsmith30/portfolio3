@@ -10,13 +10,22 @@
 }
 
 .main-header{
-    background: url(../img/backgroundimg1.jpeg);
+    background: url(../img/backgroundimg2.jpeg);
     background-size:cover;
     background-position:center;
     height: 100vh;
     min-height: 600px;
-    color:#64ffda;
     position:relative;
+    font-family: 'Permanent Marker', cursive;
+        -webkit-text-stroke: 1px black;
+        color:#64ffda;
+        text-shadow:
+            3px 3px 0 #000,
+          -1px -1px 0 #000,  
+           1px -1px 0 #000,
+           -1px 1px 0 #000,
+            1px 1px 0 #000;
+     
 }
 
 .main-header .showcase {
@@ -42,6 +51,35 @@
 .section-boxes .row {
     margin-bottom: 0 !important;
 }
+h4{
+    color:white;
+   opacity: 0.5;
+   font-family: 'Calistoga', cursive;
+
+}
+
+.mycolors{
+    color:#64ffda !important;
+
+}
+#learnmore{
+    font-family: fantasy!important;
+    text-shadow:  0!important;
+    font-style: unset;
+}
+
+.section-contact {
+    position:relative;
+}
+
+#googlemap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index:0;
+}
 
 @media(max-width: 600px){
     .main-header {
@@ -50,15 +88,4 @@
 }
 
 
-.brand-logo{
-border-style:solid;
-margin-bottom: 15px !important;
-
-}
-h4{
-    color:white;
-   opacity: 0.5;
-   font-family: 'Calistoga', cursive;
-
-}
 

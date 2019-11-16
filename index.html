@@ -7,13 +7,13 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/main.css" />
-  <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Calistoga|Permanent+Marker&display=swap" rel="stylesheet">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio 3</title>
 </head>
 
-<body>
+<body id="home" class="scrollspy">
   <header class="main-header">
     <div class="primary-overlay">
       <div class="navbar-fixed">
@@ -73,7 +73,7 @@
               and
               designing exceptional, high-quality websites and applications.</p>
             <br>
-            <a href="#about" class="btn btn-large white black-text">Learn More</a>
+            <a id="learnmore" href="#about" class="btn btn-large white black-text">Learn More</a>
             <a href="#contact" class="white-text">
               <i class="material-icons medium scroll-icon">arrow_drop_down_circle</i>
             </a>
@@ -134,11 +134,11 @@
         </div>
     </div>
 <!-- section : About -->
-    <section class="section section-about grey lighten-3 center">
+    <section id="about" class="section section-about grey lighten-3 center scrollspy">
       <div class="container">
         <h2>About</h2>
-        <p class="flow-text">Lorem, ipsum dolor sit 
-          amet consectetur adipisicing elit. Nam, possimus.</p>
+        <p class="flow-text">My name Is Marques Smith Im a Software Engineer with a background in music, psychology and design. My history in psychology and music help me navigate through team projects and client based businesses. Im inspired every
+           day to create something new and something that inspires others. I am consistently motivated as a developer by new and difficult challenges and problem solving.</p>
 
           <div class="row">
             <div class="col s12 m6">
@@ -147,24 +147,164 @@
             <div class="col s12 m5 offset-m1">
                 <br>
                 <ul class="collection with-header z-depth-4"><li class="collection-header">
-                  <h5>Services</h5>
+                  <h5>Languages</h5>
                 </li>
                 <li class="collection-item">
-                  <i class="material-icons left">check</i>Business consultation
+                  <i class="material-icons left">check</i>Javascript
                 </li>
+                <li class="collection-item">
+                  <i class="material-icons left">check</i>React
+                </li>
+                <li class="collection-item">
+                  <i class="material-icons left">check</i>Python
+                </li>
+                <li class="collection-item">
+                  <i class="material-icons left">check</i>MongoDB
+                </li>
+                <li class="collection-item">
+                  <i class="material-icons left">check</i>SQL
+                </li>
+                <li class="collection-item">
+                  <i class="material-icons left">check</i>Redux
+                </li>
+                <li class="collection-item">
+                  <i class="material-icons left">check</i>Node.js
+                </li>
+                <li class="collection-item">
+                  <i class="material-icons left">check</i>Express
+                </li>
+                <li class="collection-item">
+                  <i class="material-icons left">check</i>HTML
+                </li>
+                <li class="collection-item">
+                  <i class="material-icons left">check</i>CSS/Materialize/Bootstrap
+                </li>
+                <li class="collection-item">
+                  <i class="material-icons left">check</i>SASS
               </ul>
             </div>
           </div>
       </div>
     </section>
+<!-- What make me stand out -->
+<section id="testimonials" class="section section-testimonials blue white-text center scrollspy">
+  <div class="container">
+    <h2>What My Clients Say</h2>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card grey lighten-4 black-text z-depth-4">
+          <div class="card-content">
+            <p><em>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, deleniti!
+            </em></p>
+            <div class="card-action">
+              <p>Jon doe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+          <div class="card grey lighten-4 black-text z-depth-4">
+            <div class="card-content">
+              <p><em>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, deleniti!
+              </em></p>
+              <div class="card-action">
+                <p>Jon doe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card grey lighten-4 black-text z-depth-4">
+              <div class="card-content">
+                <p><em>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, deleniti!
+                </em></p>
+                <div class="card-action">
+                  <p>Jon doe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</section>
+
+<!-- section contact -->
+<section id="contact" class="section section-contact center scrollspy">
+<div id="googlemap"></div>
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6 offset-m6">
+    <div class="card-panel z-depth-5">
+        <h2>Contact Me</h2>
+        <div class="input-field">
+          <h5 id="name">Marques J. Smith</h5>
+        </div>
+        <div class="input-field">
+          <h5>Email: Marquesjs21@yahoo.com</h5>
+        </div>
+        <div class="input-field">
+          <h5>Phone: 323-572-3887</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- footer -->
+<footer class="page-footer blue-grey darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>Location</h5>
+          <p>You can use rows and columns here to organize your footer content.</p>
+          <p> area Marques, INC</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+              <li>
+                  <a class="white-text" href="#home">HOME</a>
+                </li>
+                <li>
+                  <a class="white-text" href="#about">ABOUT</a>
+                </li>
+                <li>
+                  <a class="white-text" href="#resume">RESUME</a>
+                </li>
+                <li>
+                  <a class="white-text" href="#contact">CONTACT</a>
+                </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright blue-grey darken-4">
+      <div class="container">
+      MJS © 2019 
+      <a class="grey-text text-lighten-4 right " href="#!">
+        <i class="material-icons left ">keyboard_arrow_up</i> Back to top
+
+      </a>
+      </div>
+    </div>
+  </footer>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script>
       $(document).ready(function () {
         // init side-nav
         $('.button-collapse').sideNav();
+
+        // scrollspy
+        $('.scrollspy').scrollSpy()
 
         // scrollfire
         const options = [
@@ -181,6 +321,34 @@
           }
         ];
         Materialize.scrollFire(options);
+
+    // map positions
+        const position =[40.730610, -73.935242];
+        const centerPosition = [40.713940, -73.859292];
+    // map positions
+        function showGoogleMaps() {
+          const latLng = new google.maps.LatLng(position[0], position[1]);
+          const centerLatLng = new google.maps.LatLng(centerPosition[0],
+          centerPosition[1]);
+    // map options
+          const mapOptions = {
+            zoom: 12,
+            streetViewControl: false,
+            scaleControl:true,
+            mapTypeId: google.maps.mapTypeId.ROADMAP,
+            center: centerLatLng
+          }
+          map = new google.maps.Map(document.getElementById('googlemap'),mapOptions);
+
+          marker = new google.maps.Marker({
+            position:LatLng,
+            map: map,
+            draggable:false,
+            animation:google.maps.Animation.DROP
+          });
+        }
+        // map event
+        google.maps.event.addDomListener(window,"load", showGoogleMaps);
       });
     </script>
 </body>
