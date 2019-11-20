@@ -99,15 +99,16 @@
       </div>
       <div class="col s12 m6 l3 red white-text box">
           <a class="btn-floating yellow pulse">
-        <i class="material-icons medium">domain</i></a><a href="http://pickupgames.herokuapp.com/">
-        <h4>PickUpGames</h4></a>
-        <p>Pugs, Aka Pick Up Games is an App that allows basketball players to connect across the city. It
-          allows you to find parks, the amount of players attending, and when they will be there.It puts
-          to bed the search for a descent pick up game of basketball
-          within your city.
-        </p>
-        <p>Languages: Mongodb || Express || React || Node || HTML || CSS </p>
-      </div>
+              <i class="material-icons large">domain</i></a>
+              <a href="https://thrifthunter.herokuapp.com/hunter">
+                <h4>PickUpGames</h4>
+              </a>
+              <p>ThriftxHunter is an app that allows you your friends and the entire world to post items up for
+                sale that you no longer need, instead of throwing old things away, this non-profit website will
+                host a space for you to sale them. You know what they say, one mans trash is another mans
+                treasure!</p>
+              <p>Languages: Javascript || Express || Node || HTML || CSS </p>
+            </div>
       <div class="col s12 m6 l3 blue white-text box">
           <a class="btn-floating green pulse">
             <i class="material-icons large">domain</i></a>
@@ -124,7 +125,7 @@
           <a class="btn-floating purple pulse">
             <i class="material-icons large">domain</i></a>
           <a href="https://thrifthunter.herokuapp.com/hunter">
-            <h4>PlayYourRole</h4>
+            <h4>Play       Your Role</h4>
           </a>
           <p>ThriftxHunter is an app that allows you your friends and the entire world to post items up for
             sale that you no longer need, instead of throwing old things away, this non-profit website will
@@ -137,8 +138,7 @@
     <section id="about" class="section section-about grey lighten-3 center scrollspy">
       <div class="container">
         <h2>About</h2>
-        <p class="flow-text">My name Is Marques Smith Im a Software Engineer with a background in music, psychology and design. My history in psychology and music help me navigate through team projects and client based businesses. Im inspired every
-           day to create something new and something that inspires others. I am consistently motivated as a developer by new and difficult challenges and problem solving.</p>
+        <p class="flow-text">I'm a fullstack software engineer based in Los Angeles, CA who enjoys building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.</p>
 
           <div class="row">
             <div class="col s12 m6">
@@ -297,9 +297,11 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoVzl01oISSrzeOww41XqdiCYIH8KRJ6g" type="text/javascript"></script>
+
     <script>
       $(document).ready(function () {
+      
         // init side-nav
         $('.button-collapse').sideNav();
 
@@ -323,8 +325,8 @@
         Materialize.scrollFire(options);
 
     // map positions
-        const position =[40.730610, -73.935242];
-        const centerPosition = [40.713940, -73.859292];
+        const position =[34.052235, -118.243683];
+        const centerPosition = [34.052235, -118.243683];
     // map positions
         function showGoogleMaps() {
           const latLng = new google.maps.LatLng(position[0], position[1]);
@@ -335,17 +337,17 @@
             zoom: 12,
             streetViewControl: false,
             scaleControl:true,
-            mapTypeId: google.maps.mapTypeId.ROADMAP,
+            mapTypeId: google.maps.ROADMAP,
             center: centerLatLng
           }
           map = new google.maps.Map(document.getElementById('googlemap'),mapOptions);
 
           marker = new google.maps.Marker({
-            position:LatLng,
+            position:latLng,
             map: map,
             draggable:false,
-            animation:google.maps.Animation.DROP
-          });
+            animation:google.maps.Animation.DROP   
+          });         
         }
         // map event
         google.maps.event.addDomListener(window,"load", showGoogleMaps);
