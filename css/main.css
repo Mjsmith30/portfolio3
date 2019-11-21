@@ -89,6 +89,12 @@ h4{
 .side-nav li>a {
     color: white!important;
 }
+#mjs{
+    border-style: solid;
+    border-style: groove;
+    border-width: thick;
+
+}
 
 @media(max-width: 600px){
     .main-header {
