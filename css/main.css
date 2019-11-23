@@ -67,6 +67,8 @@ h4{
     font-family: fantasy!important;
     text-shadow:  0!important;
     font-style: unset;
+    border-style:solid;
+    border-style: groove;
 }
 
 .section-contact {
@@ -95,6 +97,27 @@ h4{
     border-width: thick;
 
 }
+/* img{
+ padding-bottom: 79mm;
+} */
+
+.modal{
+    color:#333;
+}
+.material-icons {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
+    color:orange;
+}
+#resume{
+    background-color: orange;
+
+}    
+   
+   
+   #pugs{
+       font-size: 16px;
+   }
 
 @media(max-width: 600px){
     .main-header {
